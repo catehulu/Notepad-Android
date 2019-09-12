@@ -7,11 +7,27 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Type here..."
+        android:id="@+id/edtText"
+        android:layout_width="359dp"
+        android:layout_height="645dp"
         android:gravity="top"
-        android:id="@+id/EditText1"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:hint="Type here..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
